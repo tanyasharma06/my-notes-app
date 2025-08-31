@@ -64,3 +64,7 @@ note-app/
 - Writing clean, maintainable code
 
 This was a great project to practice modern web development skills!
+
+## Future Improvement
+-I will learn Redis and try to make it with redis
+-Work on css to make it more impressive
