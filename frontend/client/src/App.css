@@ -1,0 +1,163 @@
+/* App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+header a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+header a:hover {
+  color: #0056b3;
+}
+
+header .logout-btn {
+  margin-left: auto;
+}
+
+main {
+  flex: 1;
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+  background-color: #f8f9fa;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+}
+
+/* Dashboard Styles */
+.status {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.add-note {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.note-title {
+  font-weight: 700;
+}
+
+.note-body {
+  margin: 4px 0;
+}
+
+.note-date {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.load-more {
+  margin-top: 12px;
+}
+
+.note-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.note-actions button {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.edit-note-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 300px;
+}
+
+.edit-note-modal h3 {
+  margin: 0;
+}
+
+.edit-note-modal input {
+  width: 100%;
+}
+
+.edit-note-modal button {
+  align-self: flex-end;
+}
